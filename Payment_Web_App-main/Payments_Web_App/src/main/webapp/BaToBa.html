@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Do Transaction</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="title">
+        <h1>Send Money From Bank To Bank</h1>
+    </div>
+    <div class="container">
+        <form action="http://localhost:8080/Payments_Web_App/BankToBankTransServlet" method="post">
+            <div class="transForminput">
+                <input type="text" name="senderBankAcctNum" class="senderBankAcctNum" placeholder="Enter Your Bank Account Number....">
+                <input type="text" name="receiverBankAcctNum" class="receiverBankAcctNum" placeholder="Enter Receivers Bank Account Number....">
+                <input type="text" name="moneyToSendWallet" class="moneyToSendWallet" placeholder="Enter Amount To Send....">
+                <input type="sumbit" value="SEND MONEY" class="subtn">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
